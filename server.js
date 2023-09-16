@@ -7,7 +7,7 @@ const Persons = require('./models/person')
 const app = express()
 
 app.use(cors({
-	origin: 'http://localhost:3000'
+	origin: ['http://localhost:3000', 'https://part3-r27y.onrender.com/']
 }))
 
 app.use(express.static('build'))
